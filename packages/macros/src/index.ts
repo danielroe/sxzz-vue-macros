@@ -51,9 +51,6 @@ import VueNamedTemplate, {
 import VueReactivityTransform, {
   type Options as OptionsReactivityTransform,
 } from '@vue-macros/reactivity-transform'
-import VueSetupBlock, {
-  type Options as OptionsSetupBlock,
-} from '@vue-macros/setup-block'
 import VueSetupComponent, {
   type Options as OptionsSetupComponent,
 } from '@vue-macros/setup-component'
@@ -79,7 +76,6 @@ export interface FeatureOptionsMap {
   hoistStatic: OptionsHoistStatic
   namedTemplate: OptionsNamedTemplate
   reactivityTransform: OptionsReactivityTransform
-  setupBlock: OptionsSetupBlock
   setupComponent: OptionsSetupComponent
   setupSFC: OptionsSetupSFC
   shortEmits: OptionsShortEmits
@@ -132,7 +128,6 @@ export function resolveOptions({
   hoistStatic,
   namedTemplate,
   reactivityTransform,
-  setupBlock,
   setupComponent,
   setupSFC,
   shortEmits,
@@ -206,7 +201,6 @@ export function resolveOptions({
       reactivityTransform,
       { version }
     ),
-    setupBlock: resolveSubOptions<'setupBlock'>(setupBlock, { version }, false),
     setupComponent: resolveSubOptions<'setupComponent'>(setupComponent, {
       version,
       root,
@@ -262,7 +256,6 @@ export default createCombinePlugin<Options | undefined>(
     const plugins: OptionsPlugin[] = [
       resolvePlugin(VueSetupSFC, framework, options.setupSFC),
       setupComponentPlugins?.[0],
-      resolvePlugin(VueSetupBlock, framework, options.setupBlock),
       namedTemplatePlugins?.[0],
       resolvePlugin(VueDefineProp, framework, options.defineProp),
       resolvePlugin(VueDefineEmit, framework, options.defineEmit),

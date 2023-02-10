@@ -12,7 +12,6 @@ export default defineConfig({
   },
   plugins: [
     VueMacros({
-      setupBlock: true,
       defineOptions: true,
       shortEmits: true,
       hoistStatic: true,

@@ -14,7 +14,6 @@ export default defineConfig({
   input: ['./src/main.ts'],
   plugins: [
     VueMacros({
-      setupBlock: true,
       defineOptions: true,
       shortEmits: true,
       hoistStatic: true,

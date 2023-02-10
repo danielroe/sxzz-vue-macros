@@ -11,7 +11,6 @@ import ExportPropsVue from './examples/export-props/index.vue'
 import ExportExposeVue from './examples/export-expose/index.vue'
 import BetterDefineVue from './examples/better-define/index.vue'
 // import NamedTemplateVue from './examples/named-template/index.vue'
-import SetupBlockVue from './examples/setup-block/index.vue'
 
 import DefinePropVue from './examples/define-prop/index.vue'
 import DefineEmitVue from './examples/define-emit/index.vue'
@@ -91,11 +90,6 @@ import Full from './examples/full.setup'
     <fieldset>
       <legend>setupSFC</legend>
       <SetupSFC />
-    </fieldset>
-
-    <fieldset>
-      <legend>setupBlock</legend>
-      <SetupBlockVue />
     </fieldset>
 
     <fieldset>
