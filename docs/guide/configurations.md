@@ -11,6 +11,7 @@ All features are enabled by default except the following.
 - `exportExpose`
 - `exportProps`
 - `setupSFC`
+- `simpleProps`
 
 You can disable them by setting the option to `false`.
 
