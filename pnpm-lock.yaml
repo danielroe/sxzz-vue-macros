@@ -672,7 +672,10 @@ importers:
     devDependencies:
       '@vue/compiler-core':
         specifier: ^3.3.2
-        version: 3.3.2
+        version: 3.3.4
+      '@vueuse/core':
+        specifier: ^10.1.2
+        version: 10.2.1(vue@3.3.4)
       rollup:
         specifier: ^3.21.8
         version: 3.26.2
