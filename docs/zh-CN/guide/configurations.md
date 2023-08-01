@@ -11,7 +11,7 @@
 - `exportExpose`
 - `exportProps`
 - `setupSFC`
-- `simpleProps`
+- `simpleDefine`
 
 您可以通过将选项设置为 `false` 来禁用它们。
 
